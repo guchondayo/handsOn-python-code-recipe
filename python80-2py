@@ -1,0 +1,35 @@
+
+; 第一関数の値を保持する方法は？
+# 大事！pythonでは、第一関数のcountをグローバルとして使うには、nonlocalとして宣言しなければならない
+def countNum():
+    count = 0
+    def addNum():
+        nonlocal count
+        count += 1
+        return count
+    return addNum
+x = countNum()
+print(x())
+print(x())
+print(x())
+
+; JSだと、localという概念がない
+; https://jsfiddle.net/guchon/psj3kuvx/4/
+
+  
+;   function first(){
+; 		let x = 0
+;     function second(){
+;     	x++
+;       return x
+;     }
+;     return second
+;   }
+  
+;   y = first()
+;   console.log(y)
+;   y()
+;   y()
+;   y()
+;   z = y()
+;   console.log(z)

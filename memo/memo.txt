@@ -1,0 +1,10 @@
+python9
+    変数は普通にf   x=1とか
+python10
+    本を読む・覚えておいた方がいい単語
+    コレクション/シーケンス/集合/マップ
+    イテラブル/イテレータ　ミュータブル/イミュータブル
+python11
+    予約語は変数名、関数名、クラス名には使えない
+    https://note.nkmk.me/python-keyword-reserved-word/
+    

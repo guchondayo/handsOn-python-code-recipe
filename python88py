@@ -1,0 +1,20 @@
+class Sample():
+    class_vali = 1
+    def __init__(self,val1):
+        self.instance_val1 = val1
+    def instance_method(self):
+        print(self.class_vali,self.instance_val1)
+    @classmethod
+    def class_method(cls):
+        print(cls.class_vali)
+    @staticmethod
+    def static_method():
+        local_val = 100
+        print(local_val)
+
+
+sam = Sample(10)
+sam.instance_method()
+Sample.class_method()
+
+Sample.static_method()
